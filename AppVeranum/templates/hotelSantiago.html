@@ -14,17 +14,17 @@
     <!--Menu nav-->
     <nav class="navbar navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="principal.html"><img src="{% static 'images/Horizontal.png' %}" alt="" width="350" height="110" class="d-inline-block align-text-top"></a>
+        <a class="navbar-brand" href="{% url 'principal' %}"><img src="{% static 'images/Horizontal.png' %}" alt="" width="350" height="110" class="d-inline-block align-text-top"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <img src="https://img.icons8.com/ultraviolet/40/000000/menu--v2.png"/>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="principal.html">Volver a la pagina principal</a>
+              <a class="nav-link" aria-current="page" href="{% url 'principal' %}">Volver a la pagina principal</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="hotelVina.html">Ir al hotel de Viña del Mar</a>
+              <a class="nav-link" aria-current="page" href="{% url 'hotelVina' %}">Ir al hotel de Viña del Mar</a>
             </li>
                       
           </ul>
@@ -45,7 +45,7 @@
               <br>Hotel Veranum sede Santiago ofrece buffetes de desayuno en la mañana si usted así lo desea. Tanto comida internacion como platos locales son servidos en nuestras mesas.
               <br>Contamos con aparcamiento privado, ascensores en cada planta, sala de fumadores y balcones con una vista inigualable.
             </p>
-          <a href="principal.html"><button type="button" class="btn btn-outline-light fluid" >Volver</button></a>
+          <a href="{% url 'principal' %}"><button type="button" class="btn btn-outline-light fluid" >Volver</button></a>
         </div>
       </div>
     </section>

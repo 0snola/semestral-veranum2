@@ -44,3 +44,7 @@ def hotelVina(request):
 
 def hotelSantiago(request):
     return render(request, 'hotelSantiago.html')
+
+
+def login(request):
+    return render(request, 'login.html')    
