@@ -1,0 +1,64 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <title>Hotel Veranum</title>
+    <link rel="stylesheet" href="{% static 'css/styleSantiago.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css ">
+    <script src ="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <!--Menu nav-->
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="principal.html"><img src="{% static 'images/Horizontal.png' %}" alt="" width="350" height="110" class="d-inline-block align-text-top"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="https://img.icons8.com/ultraviolet/40/000000/menu--v2.png"/>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="principal.html">Volver a la pagina principal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="hotelVina.html">Ir al hotel de Viña del Mar</a>
+            </li>
+                      
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Contenido-->
+
+    <img src="{% static 'images/Fotos hotel/pexels-cottonbro-5371570.jpg' %}" class="img-fluid" style="width:3000px">
+
+    <section class="container-fluid"></section>
+      <div class="carousel-item active fluid" style="margin-top: -30%; width: 1000px; height: 100px; ">
+        <div class="carousel-caption d-none d-md-block text-light bg-dark fluid">
+          <h1>Nuestro hotel principal en Santiago, céntrico e imponente</h1>
+            <p >La sede se encuentra a poco más de 1 kilómetro del Centro Cultural Sanginés, y a casi 2 kilómetros del famoso Bar La Virgen.
+              <br>Nuestros clientes pueden lograr llegar a Santiago Centro fácil, debido que se encuentra a menos de 5 kilómetros del centro neurálgico de la ciudad.
+              <br>Hotel Veranum sede Santiago ofrece buffetes de desayuno en la mañana si usted así lo desea. Tanto comida internacion como platos locales son servidos en nuestras mesas.
+              <br>Contamos con aparcamiento privado, ascensores en cada planta, sala de fumadores y balcones con una vista inigualable.
+            </p>
+          <a href="principal.html"><button type="button" class="btn btn-outline-light fluid" >Volver</button></a>
+        </div>
+      </div>
+    </section>
+    <!--map-->
+    <div id="map" style="margin-top: -46.5%; margin-left: 50%;"></div>    
+    <script src="{% static 'js/scripts.js' %}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeWjPqYf1mbjpBlqpVSRzYRziP_ybivfM&callback=iniciarMapSantiago"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <a href="formularioHabitacion.html"><button style="margin-left: 42%; margin-bottom: -60px;" type="button" class="btn btn-light">reserva tu habitacion</button></a>
+
+  </body>
+</html>
+
+
+
+

@@ -55,7 +55,7 @@ ROOT_URLCONF = 'AppHoteles.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:/Users/Alonso/Desktop/proyectov2/AppHoteles/AppVeranum/templates'],
+        'DIRS': ['C:/Users/Carolina Alvarado/Desktop/Veranum'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -123,6 +123,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    'C:/Users/Carolina Alvarado/Desktop/Veranum/AppHoteles/static'
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
