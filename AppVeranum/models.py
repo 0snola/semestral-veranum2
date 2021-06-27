@@ -30,5 +30,3 @@ class ReservaSalon(models.Model):
     hotel = models.ForeignKey(Hotel,on_delete=models.CASCADE)
     class Meta:
         db_table: "reservaSalon"
-    def __str__(self):
-        return u'{0}'.format(self.reservaSalon)

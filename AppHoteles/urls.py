@@ -19,7 +19,8 @@ from AppVeranum import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('formulario/', views.reservaHabitacion),
+    path('formulario/', views.reservaHabitacion, name="formulario"),
+    path('formularioSalon/', views.reservaSalon, name="formularioSalon"),
     path('principal/', views.principal, name="principal"),
     path('hotelVina/', views.hotelVina, name="hotelVina"),
     path('hotelSantiago/', views.hotelSantiago, name="hotelSantiago" ),

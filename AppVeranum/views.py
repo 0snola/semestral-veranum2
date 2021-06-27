@@ -18,7 +18,7 @@ def reservaHabitacion(request):
     else:
         form = HabitacionForm()
         reservaHabitacion = ReservaHabitacion.objects.all()
-        return render(request,'mantenedorReservas.html',{'form': form, 'reservaHabitacion': reservaHabitacion})
+        return render(request,'formularioHabitacion.html',{'form': form, 'reservaHabitacion': reservaHabitacion})
 
 def reservaSalon(request):
     if request.method == "POST":
@@ -26,13 +26,13 @@ def reservaSalon(request):
         if form.is_valid():
             try:
                 form.save()
-                return redirect('/formulario')
+                return redirect('/formularioSalon')
             except:
                 pass
     else:
         form = SalonForm()
         reservaSalon = ReservaSalon.objects.all()
-        return render(request,'mantenedorSalones.html',{'form': form, 'reservaSalon': reservaSalon})
+        return render(request,'formularioSalon.html',{'form': form, 'reservaSalon': reservaSalon})
 
 
 def principal(request):
