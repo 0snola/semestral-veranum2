@@ -1,5 +1,7 @@
 from django.forms import ModelForm, TextInput, Textarea
 from django.db import models
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.models import User
 
 # Create your models here.
 class Hotel(models.Model):
@@ -20,13 +22,3 @@ class ReservaHabitacion(models.Model):
     cantidad = models.IntegerField()
     class Meta:
         db_table: "reservaHabitacion"
-
-class ReservaSalon(models.Model):
-    nombre = models.CharField(max_length=50)
-    apellido = models.CharField(max_length=50)
-    apellido2 = models.CharField(max_length=50)
-    rut = models.IntegerField()
-    fecha = models.DateField()
-    hotel = models.ForeignKey(Hotel,on_delete=models.CASCADE)
-    class Meta:
-        db_table: "reservaSalon"

@@ -20,9 +20,13 @@ from AppVeranum import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('formulario/', views.reservaHabitacion, name="formulario"),
-    path('formularioSalon/', views.reservaSalon, name="formularioSalon"),
     path('principal/', views.principal, name="principal"),
     path('hotelVina/', views.hotelVina, name="hotelVina"),
     path('hotelSantiago/', views.hotelSantiago, name="hotelSantiago" ),
-    path('login/', views.login, name="login" )
+    path('login/',views.loginPage,name='login'),
+    path('logout/',views.logoutUser,name='logout'),
+    path('mantenedor/',views.mantenedor,name="mantenedor"),
+    path('edit/<int:id_reserva>',views.editar),
+    path('update/<int:id_reserva>',views.update),
+    path('delete/<int:id_reserva>',views.delete),
 ]
